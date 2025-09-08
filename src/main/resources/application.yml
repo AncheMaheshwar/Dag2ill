@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: mental-wellness-bot
+  main:
+    allow-circular-references: false
+    banner-mode: "console"
+  mandatory-file-encoding: UTF-8
+
+telegram:
+  bot:
+    username: DAG2ILLbot
+    token: 8455134758:AAEpu1-BXFVcoSr2hj0Ax9znr2Gjk6AO8Y4
+
+logging:
+  level:
+    root: INFO
+
+
+razorpay:
+  key_id: rzp_live_RAtWvvPiUL27iD
+  key_secret: Zl8kABT52OfuKcI95f3I406M
