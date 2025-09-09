@@ -1,7 +1,8 @@
-[build]
-builder = "nixpacks"
-buildCommand = "mvn clean package spring-boot:repackage"
+[phases.setup]
+nixPkgs = ['maven', 'openjdk17']
 
-[deploy]
-startCommand = "java -jar target/mental-wellness-bot-1.0.0.jar"
-restartPolicyType = "ON_FAILURE"
+[phases.build]
+cmds = ['mvn clean package spring-boot:repackage']
+
+[start]
+cmd = 'java -jar target/mental-wellness-bot-1.0.0.jar'
