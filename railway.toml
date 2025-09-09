@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+buildCommand = "mvn clean package spring-boot:repackage"
+
+[deploy]
+startCommand = "java -jar target/mental-wellness-bot-1.0.0.jar"
+restartPolicyType = "ON_FAILURE"
